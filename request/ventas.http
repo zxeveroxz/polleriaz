@@ -7,16 +7,16 @@ POST {{API}}
 Content-Type: application/json
 
 {
-    "tarea":"4 tarea a realizar",
+    "tarea":"5 tarea a realizar",
     "fecha":"2022-05-31Z01:12:12"
 }
 
 ###
-GET {{API}}/T001/400
+GET {{API}}/T001/4000
 
 
 ###
-DELETE {{API}}/3
+DELETE {{API}}/5
 
 ###
 GET {{API}}/count
