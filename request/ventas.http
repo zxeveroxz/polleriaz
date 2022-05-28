@@ -1,0 +1,22 @@
+@API = http://localhost:3000/ventas
+
+get {{API}}
+
+###
+POST {{API}}
+Content-Type: application/json
+
+{
+    "tarea":"4 tarea a realizar",
+    "fecha":"2022-05-31Z01:12:12"
+}
+
+###
+GET {{API}}/T001/400
+
+
+###
+DELETE {{API}}/3
+
+###
+GET {{API}}/count
