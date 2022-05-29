@@ -5,7 +5,6 @@ async function getCliente(CODCLIENTE) {
     let cliente = await pool.request()
         .input("CODCLIENTE", sql.Int, CODCLIENTE)
         .query(querys.getClientebyId);
-        //console.log(cliente.recordset[0])
     return cliente.recordset[0];
 }
 
@@ -20,7 +19,6 @@ export const getVentasGrupo = async (req, res) => {
 
     if (cuantos === undefined)
         cuantos = 12
-
 
     try {
         const pool = await getConnection();
@@ -40,8 +38,6 @@ export const getVentasGrupo = async (req, res) => {
                     nom_cli = NOMBRECLIENTE;
                     cif_cli = CIF;
                 }
-
-                
                 return { ...row, 'CIF': cif_cli, 'NOM': nom_cli };
             })
         );
