@@ -20,3 +20,7 @@ DELETE {{API}}/5
 
 ###
 GET {{API}}/count
+
+
+###
+GET {{API}}/grupo/T001/12/8
