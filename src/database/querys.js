@@ -7,3 +7,13 @@ export  const querys =  {
     getVentasGrupo:`SELECT  * FROM  TIQUETSCAB WHERE SERIE=@serie  ORDER BY NUMERO DESC OFFSET @desde ROWS FETCH NEXT @cuantos ROWS ONLY`,
     getClientebyId: `SELECT * FROM CLIENTES WHERE CODCLIENTE=@CODCLIENTE`,
 }
+
+export  const qClientes =  {
+    getAll: 'SELECT TOP 100 * FROM CLIENTES',
+    add: 'INSERT INTO tabla_demo (tarea,fecha) values (@tarea,@fecha)',
+    getById: 'SELECT * FROM CLIENTES WHERE CODCLIENTE=@CODCLIENTE',
+    deleteById: 'DELETE from tabla_demo where id=@id',
+    getContar: 'select count(*) as total from tabla_demo',
+    getVentasGrupo:`SELECT  * FROM  TIQUETSCAB WHERE SERIE=@serie  ORDER BY NUMERO DESC OFFSET @desde ROWS FETCH NEXT @cuantos ROWS ONLY`,
+    getClientebyId: `SELECT * FROM CLIENTES WHERE CODCLIENTE=@CODCLIENTE`,
+}
